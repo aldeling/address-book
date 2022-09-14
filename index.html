@@ -7,35 +7,61 @@
   <title>Address Book</title>
 </head>
 <body>
-  <h1>Address Book</h1>
-  <h2>Add a Contact:</h2>
-  <form id="new-contact">
-    <label for="new-first-name">First Name</label>
-    <input type="text" id="new-first-name" name="new-first-name">
-    <label for="new-last-name">Last Name</label>
-    <input type="text" id="new-last-name" name="new-last-name">
-    <label for="new-phone-number">Phone Number</label>
-    <input type="text" id="new-phone-number" name="new-phone-number">
-    <label for="new-address-one">Main Address</label>
-    <input type="text" id="new-address-one" name="new-address-one">
-    <label for="new-address-two">Second Address</label>
-    <input type="text" id="new-address-two" name="new-address-two">
-    <label for="new-work-email">Work Email</label>
-    <input type="text" id="new-work-email" name="new-work-email">
-    <label for="new-personal-email">Personal Email</label>
-    <input type="text" id="new-personal-email" name="new-personal-email">
-    <button type="submit">Add</button>
-  </form>
-
-  <h2>Contacts:</h2>
-  <div id="contacts">
+  <div class="container">
+    <h1>Address Book</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Add a Contact:</h2>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First Name</label>
+            <input type="text" class= "form-control " id="new-first-name" name="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last Name</label>
+            <input type="text" class="form-control" id="new-last-name" name="new-last-name">
+          </div>
+          <div class="form-group">
+            <label for="new-phone-number">Phone Number</label>
+            <input type="text"  class="form-control" id="new-phone-number" name="new-phone-number">
+          </div>
+          <div class="form-group">
+            <label for="new-address-one">Main Address</label>
+            <input type="text" class="form-control" id="new-address-one" name="new-address-one">
+          </div>
+          <div class="form-group">
+            <label for="new-address-two">Second Address</label>
+            <input type="text" class="form-control" id="new-address-two" name="new-address-two">
+          </div>
+          <div class="form-group">
+            <label for="new-work-email">Work Email</label>
+            <input type="text" class="form-control" id="new-work-email" name="new-work-email">
+          </div>
+          <div class="form-group">
+            <label for="new-personal-email">Personal Email</label>
+            <input type="text"  class="form-control" id="new-personal-email" name="new-personal-email">
+          </div>
+          <button type="submit">Add</button>
+        </form>
+        <hr>
+        <h2>Contacts:</h2>
+        <div id="contacts">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="contact-details" class ="hidden">
+        <p>First Name: <span class="first-name"></span></p>
+        <p>Last Name: <span class="last-name"></span></p>
+        <p>Phone Number: <span class="phone-number"></span></p>
+        <p>Address one: <span class="address-one"></span></p>
+        <p>Address two: <span class="address-two"></span></p>
+        <p>Work email: <span class="work-email"></span></p>
+        <p>personal email: <span class="personal-email"></span></p>
+        <button class="btn-primary delete" type="button">Delete</button>
+      </div>
+    </div>
+    </div>
   </div>
-
-  <div id="contact-details" class="hidden">
-    <p>First Name: <span id="first-name"></span></p>
-    <p>Last Name: <span id="last-name"></span></p>
-    <p>Phone Number: <span id="phone-number"></span></p>
-  </div>
-
 </body>
 </html>
